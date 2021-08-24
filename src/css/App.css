@@ -1,0 +1,39 @@
+* {
+  font-family: "MapleLight";
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: white;
+  min-height: 100vh;
+  font-size: 2vh;
+  color: black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 3vh;
+  width: 100vw;
+  background-color: aqua;
+  flex-direction: row!important;
+  justify-content: flex-end!important;
+  padding: 1vh;
+}
+
+.flex-column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "MapleLight";
+  src: url(/src/font/Maplestory_Light.ttf);
+}
+
+@font-face {
+  font-family: "MapleBold";
+  src: url(/src/font/Maplestory_Bold.ttf);
+}
