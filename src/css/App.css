@@ -1,20 +1,37 @@
 * {
   font-family: "MapleLight";
   box-sizing: border-box;
+  -ms-overflow-style: none;
+
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 .App {
   background-color: white;
-  min-height: 100vh;
-  font-size: 2vh;
+  height: 100vh;
+  font-size: 10px;
   color: black;
 }
 
-.footer {
+.body {
+  height: 97vh;
+}
+
+.main-fontSize {
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
+  width: 124rem;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+}
+
+.footer {
   height: 3vh;
   width: 100vw;
+  font-size: 2rem;
   background-color: aqua;
   flex-direction: row!important;
   justify-content: flex-end!important;

@@ -1,22 +1,27 @@
 import './css/App.css';
 import Footer from './components/Footer'
+import MainBody from './components/MainBody'
 import Header from './components/Header'
 import ReactDOM from 'react-dom';
-
-function WhoAmI(props) {
-  return <div>
-  <h2>이름: {props.name}</h2>
-  <h2>좋아하는 것: 게임을 좋아하는 것으로 추정</h2>
-  <h2>잘하는 것: 꾸준히 찾아보는 중...</h2>
-  </div>;
-}
+import React, {useState} from 'react';
 
 function App() {
+  const [MousePosition, setMousePosition] = useState({
+    left:0,
+    top:0
+  });
+  function handleMouseMove(ev) {
+    setMousePosition({left: ev.pageX, top:ev.pageY});
+  }
   return (
-    <div className="App flex-column-center" id="app">
-      <WhoAmI name="권영민"/>
+    <div className="App flex-column-center" id="app" onMouseMove={(ev)=>handleMouseMove(ev)}>
+      <div className="flex-column-center body">
+        <MainBody id="font" x={MousePosition.left} y={MousePosition.top}/>
+        {MousePosition.top}, {MousePosition.left}
+
+      </div>
       <div className="flex-column-center footer">
-        <Footer className="footer"/>
+        <Footer/>
       </div>
     </div>
   );
