@@ -9,7 +9,7 @@
 }
 
 .App {
-  background-color: white;
+  background-color: aliceblue;
   height: 100vh;
   font-size: 10px;
   color: black;
@@ -23,16 +23,18 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 124rem;
+  width: 90%;
+  text-align: center;
   transform: translate(-50%, -50%);
-  font-size: 8rem;
+  font-size: 10vh;
+  cursor: default;
+  user-select: none;
 }
 
 .footer {
   height: 3vh;
   width: 100vw;
-  font-size: 2rem;
-  background-color: aqua;
+  font-size: 2vh;
   flex-direction: row!important;
   justify-content: flex-end!important;
   padding: 1vh;
