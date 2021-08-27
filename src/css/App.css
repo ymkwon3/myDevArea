@@ -15,8 +15,16 @@
   color: black;
 }
 
+.header {
+  height: 12vh;
+  font-family: "MapleBold";
+  font-size: 10vh;
+  border-bottom: 1rem double black;
+  user-select: none;
+}
+
 .body {
-  height: 97vh;
+  height: 85vh;
 }
 
 .main-fontSize {
@@ -39,6 +47,7 @@ a {
 
 a:hover {
   transform: scale(1.1);
+  font-family: "MapleBold";
 }
 
 .footer {

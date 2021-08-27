@@ -5,10 +5,10 @@
 
 td {
     vertical-align: top;
-    text-align: center;
     font-size: 3rem;
     transform-style: preserve-3d;
     transition: all 1s;
+    background-color: aliceblue;
 }
 
 td:hover {
@@ -20,18 +20,18 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+    margin: 2.5% 5%;
 }
 
 .front {
     z-index: 2;
     transform: rotateY(0deg);
-    background-color: aliceblue;
 }
 
 .back {
     z-index: 1;
     transform: rotateY(180deg);
-    background-color: aliceblue;
+    box-shadow: 0.5rem 0.5rem #bbb;
 }

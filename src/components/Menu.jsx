@@ -6,7 +6,7 @@ function App(props) {
         <table className="menu">
             <tbody>
                 <tr>
-                    <td><section className="front"/><section className="back"><Link to="/who">Who Am I?</Link></section></td>
+                    <td><section className="front"/><section className="back"><Link to="/WhoAmI">Who Am I?</Link></section></td>
                     <td><section className="front"/><section className="back">Who Am I?</section></td>
                     <td><section className="front"/><section className="back">Who Am I?</section></td>
                 </tr>
