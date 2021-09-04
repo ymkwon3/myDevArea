@@ -1,26 +1,42 @@
 * {
-  font-family: "MapleLight";
+  font-family: "Poppins";
   box-sizing: border-box;
   -ms-overflow-style: none;
-
+  cursor: none;
 }
 ::-webkit-scrollbar {
   display: none;
 }
 
+.cursor {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  mix-blend-mode: difference;
+}
+
 .App {
-  background-color: aliceblue;
+  background-color: #202020;
   height: 100vh;
   font-size: 10px;
-  color: black;
+  color: white;
 }
 
 .header {
   height: 12vh;
-  font-family: "MapleBold";
   font-size: 10vh;
-  border-bottom: 1rem double black;
+  font-weight: bold;
+  text-transform: uppercase;
   user-select: none;
+  transform-style: preserve-3d;
+  transition: all 1s;
+}
+
+.header:hover {
+  transform: rotateY(180deg);
 }
 
 .body {
@@ -35,19 +51,35 @@
   text-align: center;
   transform: translate(-50%, -50%);
   font-size: 10vh;
-  cursor: default;
   user-select: none;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
   transition: 0.2s;
 }
 
-a:hover {
-  transform: scale(1.1);
-  font-family: "MapleBold";
+.menu {
+  width: 100rem;
+  height: 50rem;
+}
+
+td {
+  font-size: 5rem;
+  background-color: #202020;
+  user-select: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  -webkit-text-stroke: 0.2rem #ffffff;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  opacity: 0.3;
+  transition: all 0.5s linear;
+}:hover {
+  opacity: 1;
+  -webkit-text-fill-color: white;
 }
 
 .footer {

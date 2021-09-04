@@ -1,24 +1,23 @@
 import { Link } from 'react-router-dom';
-import '../css/Menu.css';
+import '../css/App.css';
 
 function App(props) {
     return (
         <table className="menu">
             <tbody>
                 <tr>
-                    <td><section className="front"/><section className="back"><Link to="/WhoAmI">Who Am I?</Link></section></td>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
+                    <td><Link to="/WhoAmI">Who Am I?</Link></td>
+                    <td>Who Am I?</td>
+                    <td>Who Am I?</td>
                 </tr>
                 <tr>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
-                </tr>
-                <tr>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
-                    <td><section className="front"/><section className="back">Who Am I?</section></td>
+                    <td><Link to="/WhoAmI">Who Am I?</Link></td>
+                    <td>Who Am I?</td>
+                    <td>Who Am I?</td>
+                </tr><tr>
+                    <td><Link to="/WhoAmI">Who Am I?</Link></td>
+                    <td>Who Am I?</td>
+                    <td>Who Am I?</td>
                 </tr>
             </tbody>
         </table>
