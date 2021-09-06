@@ -25,33 +25,55 @@
   color: white;
 }
 
-.header {
+.heading {
   height: 12vh;
-  font-size: 10vh;
+  font-size: 8rem;
   font-weight: bold;
-  text-transform: uppercase;
   user-select: none;
   transform-style: preserve-3d;
-  transition: all 1s;
+  transition: all 1.5s;
+  z-index: 100;
 }
 
-.header:hover {
+.heading:hover {
   transform: rotateY(180deg);
+}
+
+.sub-heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 1.4rem;
+}
+
+.svg-div {
+  width: 2.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.svg-size {
+  width: 100%;
+  height: 100%;
 }
 
 .body {
   height: 85vh;
+  width: 100%;
 }
 
-.main-fontSize {
+.main-font {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
+  width: 100%;
   text-align: center;
   transform: translate(-50%, -50%);
-  font-size: 10vh;
   user-select: none;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 a {
@@ -70,9 +92,8 @@ td {
   background-color: #202020;
   user-select: none;
   text-align: center;
-  text-transform: uppercase;
   letter-spacing: 0.2rem;
-  -webkit-text-stroke: 0.2rem #ffffff;
+  -webkit-text-stroke: 0.1rem #fff;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   opacity: 0.3;
@@ -96,6 +117,23 @@ td {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.flex-row-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.icon-name-section {
+  width: 30rem;
+  justify-content: flex-start!important;
+  margin: 5rem 0;
+}
+
+.icon-name-section > div {
+  margin: 0 0.5rem;
 }
 
 @font-face {

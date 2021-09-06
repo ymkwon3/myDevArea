@@ -4,7 +4,7 @@ import React, {useState, useRef} from 'react';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 
 import Footer from './components/Footer';
-import WhoAmI from './components/WhoAmI';
+import AboutMe from './components/AboutMe';
 import Menu from './components/Menu'
 import Header from './components/Header';
 import { useEffect } from 'react';
@@ -32,14 +32,14 @@ function App() {
   return (
     <>
       <div className="App flex-column-center" id="app" onMouseMove={(ev)=>handleMouseMove(ev)}>
-        <div className="header">{window.location.pathname.substr(1)}</div>
+        <div className="heading">{window.location.pathname.substr(1)}</div>
         <div className="flex-column-center body">
           <BrowserRouter>
             <Route exact path="/">
                 <Redirect to="/Menu" />
             </Route>
             <Route path="/Menu" render={() => <Menu/>}/>
-            <Route path="/WhoAmI" render={() => <WhoAmI x={MousePosition.left} y={MousePosition.top}/>}/>
+            <Route path="/AboutMe" render={() => <AboutMe x={MousePosition.left} y={MousePosition.top}/>}/>
           </BrowserRouter>
         </div>
         <div className="flex-column-center footer">

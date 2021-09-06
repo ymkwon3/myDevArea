@@ -6,16 +6,17 @@ function App(props) {
         <table className="menu">
             <tbody>
                 <tr>
-                    <td><Link to="/WhoAmI">Who Am I?</Link></td>
+                    <td><Link to="/AboutMe">About Me</Link></td>
                     <td>Who Am I?</td>
                     <td>Who Am I?</td>
                 </tr>
                 <tr>
-                    <td><Link to="/WhoAmI">Who Am I?</Link></td>
+                    <td><Link to="/AboutMe">Who Am I?</Link></td>
                     <td>Who Am I?</td>
                     <td>Who Am I?</td>
-                </tr><tr>
-                    <td><Link to="/WhoAmI">Who Am I?</Link></td>
+                </tr>
+                <tr>
+                    <td><Link to="/AboutMe">Who Am I?</Link></td>
                     <td>Who Am I?</td>
                     <td>Who Am I?</td>
                 </tr>
