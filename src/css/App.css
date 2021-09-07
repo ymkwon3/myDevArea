@@ -42,6 +42,7 @@
 .sub-heading {
   font-size: 2.4rem;
   font-weight: bold;
+  transition: all 0.2s;
 }
 
 .content {
@@ -52,6 +53,7 @@
   width: 2.8rem;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 .svg-size {
@@ -130,10 +132,28 @@ td {
   width: 30rem;
   justify-content: flex-start!important;
   margin: 5rem 0;
+  transition-duration: 0.5s;
+}
+
+.icon-name-section:hover {
+  transform: scale(1.1);
 }
 
 .icon-name-section > div {
   margin: 0 0.5rem;
+  transition-duration: 0.5s;
+}
+
+#home-icon {
+  width: 2.8rem;
+  position: absolute;
+  top: 6%;
+  left: 25%;
+  transition-duration: 0.5s;
+}
+
+#home-icon:hover {
+  transform: scale(1.2);
 }
 
 @font-face {
