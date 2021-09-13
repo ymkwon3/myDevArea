@@ -1,0 +1,8 @@
+.page-skill {
+    width: 80rem;
+    align-items: flex-start!important;
+}
+
+.page-skill > div {
+    margin: 2rem 0;
+}

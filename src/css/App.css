@@ -16,6 +16,7 @@
   height: 3rem;
   background-color: white;
   mix-blend-mode: difference;
+  z-index: 101;
 }
 
 .App {
@@ -26,7 +27,7 @@
 }
 
 .heading {
-  height: 12vh;
+  height: 10vh;
   font-size: 8rem;
   font-weight: bold;
   user-select: none;
@@ -62,6 +63,7 @@
 }
 
 .body {
+  justify-content: center;
   height: 85vh;
   width: 100%;
 }
@@ -86,7 +88,7 @@ a {
 
 .menu {
   width: 100rem;
-  height: 50rem;
+  height: 40rem;
 }
 
 td {
@@ -106,7 +108,7 @@ td {
 }
 
 .footer {
-  height: 3vh;
+  height: 5vh;
   width: 100vw;
   font-size: 2vh;
   flex-direction: row!important;
@@ -116,7 +118,6 @@ td {
 
 .flex-column-center {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }

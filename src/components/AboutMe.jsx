@@ -12,7 +12,6 @@ function App(props) {
     return (
     <div className="main-font"  style={{transform: "translate(" + xhandler() + "%," + yhandler() +"%)"}}>
         <div className="flex-row-center">
-            <div className="flex-row-center icon-name-section"/>
             <div className="flex-row-center icon-name-section">
                 <div className="svg-div"><img className="svg-size" src="images/user.svg" alt="userImage"/></div>
                 <div className="sub-heading">이름 </div>
@@ -28,11 +27,9 @@ function App(props) {
                 <div className="sub-heading">연락처 </div>
                 <div className="content">010-8538-3563</div>
             </div>
-            <div className="flex-row-center icon-name-section"/>
         </div>
         
         <div className="flex-row-center">
-            <div className="flex-row-center icon-name-section"/>
             <div className="flex-row-center icon-name-section">
                 <div className="svg-div"><img className="svg-size" src="images/address.svg" alt="userImage"/></div>
                 <div className="sub-heading">주소지 </div>
@@ -48,7 +45,6 @@ function App(props) {
                 <div className="sub-heading">학력 </div>
                 <div className="content">국립경상대학교 컴퓨터과학과</div>
             </div>
-            <div className="flex-row-center icon-name-section"/>
         </div>
     </div>
     );

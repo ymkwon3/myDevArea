@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import React, {useState, useEffect} from 'react';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom';
 
-import Footer from './components/Footer';
-import AboutMe from './components/AboutMe';
-import Menu from './components/Menu'
 import Header from './components/Header';
+import Footer from './components/Footer';
+
+import Menu from './components/Menu'
+import AboutMe from './components/AboutMe';
+import Skill from './components/Skill';
+
 
 function App() {
   const [MousePosition, setMousePosition] = useState({
@@ -39,6 +42,7 @@ function App() {
               </Route>
               <Route path="/Menu" render={() => <Menu/>}/>
               <Route path="/AboutMe" render={() => <AboutMe x={MousePosition.left} y={MousePosition.top}/>}/>
+              <Route path="/Skill" render={() => <Skill x={MousePosition.left} y={MousePosition.top}/>}/>
           </div>
         </BrowserRouter>
 
