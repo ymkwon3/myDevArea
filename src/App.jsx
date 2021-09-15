@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Menu from './components/Menu'
 import AboutMe from './components/AboutMe';
 import Skill from './components/Skill';
+import Hobby from './components/Hobby';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <>
+      <div className="cursor"/>
       <div className="App flex-column-center" id="app" onMouseMove={(ev)=>handleMouseMove(ev)}>
         <BrowserRouter>
           <Route render={() => <Header/>}/>
@@ -43,6 +45,7 @@ function App() {
               <Route path="/Menu" render={() => <Menu/>}/>
               <Route path="/AboutMe" render={() => <AboutMe x={MousePosition.left} y={MousePosition.top}/>}/>
               <Route path="/Skill" render={() => <Skill x={MousePosition.left} y={MousePosition.top}/>}/>
+              <Route path="/Hobby" render={() => <Hobby/>}/>
           </div>
         </BrowserRouter>
 
@@ -50,7 +53,7 @@ function App() {
           <Footer/>
         </div>
       </div>
-      <div className="cursor"/>
+      
     </>
   );
 }

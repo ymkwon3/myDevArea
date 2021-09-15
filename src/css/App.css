@@ -20,7 +20,8 @@
 }
 
 .App {
-  background-color: #202020;
+  /* background-color: #F5DF4D; */
+  background-color: #939597;
   height: 100vh;
   font-size: 10px;
   color: white;
@@ -91,20 +92,28 @@ a {
   height: 40rem;
 }
 
-td {
+td{
   font-size: 5rem;
-  background-color: #202020;
   user-select: none;
   text-align: center;
   letter-spacing: 0.2rem;
-  -webkit-text-stroke: 0.1rem #fff;
-  -webkit-text-fill-color: transparent;
   font-weight: bold;
   opacity: 0.3;
   transition: all 0.5s linear;
-}:hover {
+}
+td:hover{
   opacity: 1;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: #F5DF4D;
+}
+
+td > a {
+  -webkit-text-stroke: 0.2rem #F5DF4D;
+  -webkit-text-fill-color: transparent;
+}
+
+td > a:hover{
+  opacity: 1;
+  -webkit-text-fill-color: #F5DF4D;
 }
 
 .footer {
