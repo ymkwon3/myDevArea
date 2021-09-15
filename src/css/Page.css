@@ -1,8 +1,12 @@
-.page-skill {
-    width: 80rem;
+.page-flex-start {
+    width: 70rem;
     align-items: flex-start!important;
 }
 
-.page-skill > div {
+.page-flex-start > div {
     margin: 2rem 0;
+}
+
+.character {
+    width: 22rem;
 }

@@ -1,17 +1,20 @@
 import axios from 'axios';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../css/App.css';
+import '../css/Page.css';
 function App(props) {
-    let userInfo = {
-        'World' : 'world',
-        'CharacterName' : 'name',
-    };
+    const [userInfo, setUserInfo] = useState({
+        'WorldName' : '',
+        'CharacterName' : '',
+        'JobDetail' : '',
+        'Lev' : '',
+        'AvatarImgURL' : ''
+    });
     useEffect(() => { // useEffect에 빈 배열을 넣어줌으로써 한번만 실행한다.
         axios.post('http://localhost:8080',{})
         .then(function(response) {
-            console.log(response);
-            console.log(response.data.CharacterName._text);
-            userInfo['CharacterName'] = response.data.CharacterName._text;
+            console.log(response.data);
+            setUserInfo(response.data);
         })
         .catch(function(response) {
             console.log(response);
@@ -19,15 +22,17 @@ function App(props) {
     }, []);
     
     return (
-    <div>
-        <div className="flex-column-center page-skill">
-            <div className="sub-heading">Wolrd : {userInfo.CharacterName}</div>
-            <div className="sub-heading">Web Development : HTML, CSS, JQuery, React, SpringBoot</div>
-            <div className="sub-heading">IDE : VS Code, AndroidStudio</div>
-            <div className="sub-heading">DataBase : MySQL</div>
+    <>
+        <div className="flex-row-center">
+            <div className="flex-column-center page-flex-start" style={{width:'22rem'}}>
+                <div className="sub-heading">World : {userInfo['WorldName']['_text']}</div>
+                <div className="sub-heading">Name : {userInfo['CharacterName']['_text']}</div>
+                <div className="sub-heading">Job : {userInfo['JobDetail']['_text']}</div>
+                <div className="sub-heading">Lev : {userInfo['Lev']['_text']}</div>
+            </div>
+            <img className="character" src={userInfo['AvatarImgURL']['_text']} alt="Avatar"></img>
         </div>
-        
-    </div>
+    </>
     );
 }
 
