@@ -11,6 +11,7 @@ function App(props) {
         'AvatarImgURL' : ''
     });
     useEffect(() => { // useEffect에 빈 배열을 넣어줌으로써 한번만 실행한다.
+        //프론트엔드에서 정보를 언제 불러오는게 맞을까?
         axios.post('http://localhost:8080',{})
         .then(function(response) {
             console.log(response.data);
