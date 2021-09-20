@@ -8,13 +8,14 @@ function App(props) {
         'CharacterName': '',
         'JobDetail': '',
         'Lev': '',
-        'AvatarImgURL': ''
+        'AvatarImgURL': '',
+        'userid': ''
     });
     useEffect(() => { // useEffect에 빈 배열을 넣어줌으로써 한번만 실행한다.
         //프론트엔드에서 정보를 언제 불러오는게 맞을까?
-        //db서버를 따로 만들어서 공유하게 할까?
+        //db서버에서 따로 불러오자.
 
-        axios.post('http://localhost:8080', {})
+        axios.post('http://localhost:8080/', {})
             .then(function (response) {
                 console.log(response.data);
                 setUserInfo(response.data);
@@ -32,6 +33,7 @@ function App(props) {
                     <div className="sub-heading">Name : {userInfo['CharacterName']['_text']}</div>
                     <div className="sub-heading">Job : {userInfo['JobDetail']['_text']}</div>
                     <div className="sub-heading">Lev : {userInfo['Lev']['_text']}</div>
+                    <div className="sub-heading">UserId : {userInfo['userid']}</div>
                 </div>
                 <img className="character" src={userInfo['AvatarImgURL']['_text']} alt="Avatar"></img>
             </div>
