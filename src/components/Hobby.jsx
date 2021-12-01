@@ -23,19 +23,26 @@ function App(props) {
             .catch(function (response) {
                 console.log(response);
             })
+
     }, []);
 
     return (
         <>
-            <div className="flex-row-center">
-                <div className="flex-column-center page-flex-start" style={{ width: '22rem' }}>
-                    <div className="sub-heading">World : {userInfo['WorldName']['_text']}</div>
-                    <div className="sub-heading">Name : {userInfo['CharacterName']['_text']}</div>
-                    <div className="sub-heading">Job : {userInfo['JobDetail']['_text']}</div>
-                    <div className="sub-heading">Lev : {userInfo['Lev']['_text']}</div>
-                    <div className="sub-heading">UserId : {userInfo['userid']}</div>
+            <div className="flex-column-center">
+                <div className="sub-heading" style={{margin: '5rem 0'}}>게임을 좋아하며 현재는 메이플스토리를 플레이합니다.<br/>
+                메이플스토리에서 제공하는 SOAP API를 통해 정보를 불러왔습니다.</div>
+
+                <div className="flex-row-center">
+                    <div className="flex-column-center page-flex-start" style={{ width: '22rem' }}>
+                        <div className="sub-heading">World : {userInfo['WorldName']['_text']}</div>
+                        <div className="sub-heading">Name : {userInfo['CharacterName']['_text']}</div>
+                        <div className="sub-heading">Job : {userInfo['JobDetail']['_text']}</div>
+                        <div className="sub-heading">Lev : {userInfo['Lev']['_text']}</div>
+                        <div className="sub-heading">UserId : {userInfo['userid']}</div>
+                    </div>
+                    <img className="character" src={userInfo['AvatarImgURL']['_text']} alt="Avatar"></img>
                 </div>
-                <img className="character" src={userInfo['AvatarImgURL']['_text']} alt="Avatar"></img>
+                
             </div>
         </>
     );

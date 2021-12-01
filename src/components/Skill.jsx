@@ -9,7 +9,6 @@ function App(props) {
             <div className="sub-heading">IDE : VS Code, AndroidStudio</div>
             <div className="sub-heading">DataBase : MySQL</div>
         </div>
-        
     </div>
     );
 }

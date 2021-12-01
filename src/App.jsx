@@ -10,7 +10,7 @@ import Menu from './components/Menu'
 import AboutMe from './components/AboutMe';
 import Skill from './components/Skill';
 import Hobby from './components/Hobby';
-
+import Intro from './components/Intro';
 
 function App() {
   const [MousePosition, setMousePosition] = useState({
@@ -32,6 +32,7 @@ function App() {
     }
   });
 
+
   return (
     <>
       <div className="cursor"/>
@@ -46,6 +47,7 @@ function App() {
               <Route path="/AboutMe" render={() => <AboutMe x={MousePosition.left} y={MousePosition.top}/>}/>
               <Route path="/Skill" render={() => <Skill x={MousePosition.left} y={MousePosition.top}/>}/>
               <Route path="/Hobby" render={() => <Hobby/>}/>
+              <Route path="/Intro" render={() => <Intro/>}/>
           </div>
         </BrowserRouter>
 

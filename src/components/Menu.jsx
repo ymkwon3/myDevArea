@@ -8,11 +8,9 @@ function App(props) {
                 <tr>
                     <td><Link to="/AboutMe">ABOUT ME!</Link></td>
                     <td><Link to="/Skill">SKILL!</Link></td>
-                    <td><Link to="/AboutMe">Who Am I?</Link></td>
                 </tr>
                 <tr>
-                    <td><Link to="/AboutMe">Who Am I?</Link></td>
-                    <td><Link to="/AboutMe">Who Am I?</Link></td>
+                    <td><Link to="/Intro">Introduce</Link></td>
                     <td><Link to="/Hobby">HOBBY?</Link></td>
                 </tr>
             </tbody>
